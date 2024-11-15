@@ -1,0 +1,143 @@
+
+    /* Basic styling */
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    .navbar { background-color: black; }
+    .navbar-nav .nav-link { color: white !important; }
+    .header-section { min-height: 200px; background-color: #f4f4f4; text-align: center; padding: 100px 0; }
+    .about-section {  padding: 50px 0; text-align: center; }
+    a{text-decoration: none;}
+    .custom-btn {
+  background-color: rgba(108, 150, 241, 0.705);
+  color: rgb(15, 14, 14);
+  border: none;
+  border-radius: 23px;
+  width: 200px !important;
+  padding: 10px 20px; /* Adjust padding as needed */
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect */
+.custom-btn:hover {
+  background-color: rgba(241, 158, 50, 0.9); /* Slightly darker shade on hover */
+  color: white;
+  transform: scale(1.05); /* Slightly enlarges the button */
+}
+
+    .container { max-width: 1320px; padding: 0 12px; }
+    .nav-container { position: sticky; top: 0; padding-top: 20px; height: 100vh; background-color: #80c2be63; display: flex; flex-direction: column; row-gap: 30px; }
+    .nav-link-s { color: black; text-decoration: none; font-weight: normal; padding: 10px; border-left: 3px solid transparent; transition: all 0.3s ease; }
+    .nav-link-s.active { color:rgba(0, 128, 0, 0.671); font-weight: bold; border-left: 3px solid rgba(0, 128, 0, 0.671); }
+    .active { color:rgba(0, 128, 0, 0.671); font-weight: bold; border-left: 3px solid rgba(0, 128, 0, 0.671); }
+    .content { padding: 20px; }
+    .content { padding: 20px; }
+    .section-content {min-height: 100vh; border: 1px solid #ddd;}
+    .team-section { background: #f2f2f2; padding: 60px 0; text-align: center; }
+    .team-card { background: white; padding: 20px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); margin-bottom: 20px; }
+    .team-card img { border-radius: 50%; width: 80px; height: 80px; object-fit: cover; }
+    .team-card h5 { margin: 15px 0 5px; font-size: 18px; }
+    .team-card p { color: gray; font-size: 14px; }
+    .footer { min-height: 250px; background: #f9f9f9; display: flex; align-items: center; justify-content: center; }
+    .header-section h1{color: rgba(241, 158, 50, 0.705);}
+    .about-section{min-height: 350px;display: flex;justify-content: center;align-items: center;flex-direction: column;}
+    .about-section p{color: black;max-width: 560px;}
+    .content{padding: 0px;}
+   #section1 {
+  background-color: rgba(241, 158, 50, 0.705);
+  color: white; /* Ensures text is readable on a red background */
+  text-align: center;
+  display: grid;
+  place-items: center;
+}
+
+#section2 {
+  background-color: rgba(86, 178, 240, 0.589);
+  color: black; /* Adjust if needed for readability */
+  text-align: center;
+  display: grid;
+  place-items: center;
+}
+h1{text-transform: capitalize;font-size: clamp(1.8rem,7vw,5.2rem);color: white;}
+.about-section p{font-size: clamp(1rem,2vw,2.8rem);}
+#section3 {
+  background-color: rgba(113, 204, 113, 0.616);
+  color: white;
+  text-align: center;
+  display: grid;
+  place-items: center;
+}
+
+#section4 {
+  background-color: rgba(219, 219, 144, 0.808);
+  color: black; /* Adjust if needed for readability */
+  text-align: center;
+  display: grid;
+  place-items: center;
+}
+
+#section5 {
+  background-color: rgba(253, 185, 59, 0.692);
+  color: white;
+  text-align: center;
+  display: grid;
+  place-items: center;
+}
+
+    /* Responsive styling for nav-container */
+    @media (max-width: 768px) {
+        .nav-container {
+            position: fixed;
+            width: 100%;
+            height: auto;
+            background: #f8f9fa;
+            padding: 0;
+            top: 0;
+            z-index: 1000;
+        }
+        .nav-container select {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .nav-container a {
+            display: none;
+        }
+        .content{
+            position:   relative !important;
+        }
+        .nav-container-hide{position: sticky !important;
+    top: 10px !important;
+}
+.nav-container-hide select{width: 100% !important;padding: 10px;}
+
+/*  */
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+#section-dropdown {
+    appearance: none; /* Hide the default icon */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 10px;
+    width: 100%;
+    background: rgb(58, 57, 57);
+    font-size: 16px;
+    color: white;
+}
+
+.custom-dropdown::before {
+    content: "\f0c9"; /* Font Awesome Unicode for bars icon */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Make sure the icon doesn’t block dropdown interactions */
+    color: rgb(255, 255, 255);
+}
+    }
